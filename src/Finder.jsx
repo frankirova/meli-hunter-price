@@ -20,7 +20,7 @@ export const Finder = () => {
   const searchProducts = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8000/findProducts?q=${searchQuery}`
+        `https://meli-hunter-price-server.onrender.com/findProducts?q=${searchQuery}`
       );
       const datito = await response.json();
       console.log(datito);
