@@ -4,7 +4,7 @@ import { useFetch } from "../hooks/useFetch";
 export const Finder = () => {
     const [searchQuery, setSearchQuery] = useState("");
     const { data } = useFetch(
-      `http://localhost:8000/findProduct?q=${searchQuery}`
+      `https://meli-hunter-price-server.onrender.com/findProduct?q=${searchQuery}`
     );
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
