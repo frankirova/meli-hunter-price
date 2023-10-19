@@ -1,7 +1,7 @@
 import "./App.css";
 import { useFetch } from "../hooks/useFetch";
 import { useState } from "react";
-import { Finder } from "./finder";
+import { Finder } from "./Finder";
 import { ModalHunt } from "./ModalHunt";
 
 function App() {
