@@ -53,7 +53,7 @@ function App() {
   console.log(selectedProduct);
   console.log(targetPrice);
 
-  if (!data) return <p>loading...</p>;
+  //if (!data) return <p>loading...</p>;
 
   return (
     <>
