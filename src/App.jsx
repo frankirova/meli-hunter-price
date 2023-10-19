@@ -5,7 +5,7 @@ import { Finder } from "./Finder";
 import { ModalHunt } from "./ModalHunt";
 
 function App() {
-  const { data, handleChangeData } = useFetch("http://localhost:8000/products");
+  const { data, handleChangeData } = useFetch("https://meli-hunter-price-server.onrender.com/products");
 
   const [selectedProduct, setSelectedProduct] = useState("");
   const [targetPrice, setTargetPrice] = useState("");
@@ -19,7 +19,7 @@ function App() {
   const searchProducts = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8000/findProducts?q=${searchQuery}`
+        `https://meli-hunter-price-server.onrender.com/findProducts?q=${searchQuery}`
       );
       const datito = await response.json();
       handleChangeData(datito);
